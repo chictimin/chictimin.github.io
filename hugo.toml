@@ -59,17 +59,17 @@ theme = "minimal-black"
       label = "TailwindCSS"
       icon = "devicon-tailwindcss-plain"
 
-    [[params.home.techReverse]]
+    [[params.home.tech]]
       label = "GraphQL"
       icon = "devicon-graphql-plain"
 
-    [[params.home.techReverse]]
+    [[params.home.tech]]
       label = "Tanstack Query"
 
-    [[params.home.techReverse]]
+    [[params.home.tech]]
       label = "React-Hook-Form"
 
-    [[params.home.techReverse]]
+    [[params.home.tech]]
       label = "Git"
       icon = "devicon-git-plain"
 
