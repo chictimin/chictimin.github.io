@@ -4,7 +4,11 @@ subtitle = "Frontend Engineer · AI Engineer (studying)"
 layout = "about-alternative"
 +++
 
-13년 넘게 프론트엔드 개발을 해왔습니다. Next.js/React 기반 대규모 서비스의 아키텍처 설계부터 성능 최적화, 디자인 시스템 구축까지 다양한 프로젝트를 리딩해왔고, 최근에는 AI Engineering을 공부하며 새로운 영역으로 확장하고 있습니다.
+웹 퍼블리셔로 개발을 시작해, API 연동과 화면 스크립팅을 다루다 보니 자연스럽게 프론트엔드 개발자가 됐습니다.
+
+13년 넘게 Next.js/React 기반 대규모 서비스의 아키텍처 설계부터 성능 최적화, 디자인 시스템 구축까지 다양한 프로젝트를 리딩해왔습니다.
+
+최근에는 AI Engineering을 공부하며 새로운 영역으로 확장하고 있습니다.
 
 ## What I Do
 
