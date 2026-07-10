@@ -1,0 +1,203 @@
+baseURL = 'https://chictimin.github.io/'
+locale = 'ko'
+title = 'devlog'
+theme = "minimal-black"
+
+# Enable search index generation and web app manifest
+[outputs]
+  home = ["HTML", "RSS", "JSON", "WebAppManifest"]
+
+[outputFormats.WebAppManifest]
+  mediaType = "application/manifest+json"
+  rel = "manifest"
+  baseName = "manifest"
+  isPlainText = true
+  notAlternative = true
+
+[params]
+  brand = "devlog"
+  description = "개발 기록을 남기는 블로그"
+
+  # Favicon - Place your favicon files in /static/ directory
+  favicon = "icons/favicon.svg"
+  appleTouchIcon = "apple-touch-icon.png"
+
+  logo = "images/logo.png"
+
+  projectsIntro = "진행했던 프로젝트들입니다."
+  blogIntro = ""
+
+  [params.manifest]
+    themeColor = "#a855f7"
+    backgroundColor = "#000000"
+    categories = ["blog", "portfolio", "developer"]
+
+  [params.theme]
+    defaultTheme = "dark"
+
+  [params.home]
+    sections = ["hero", "now", "tech-marquee", "projects", "posts"]
+    showNowSection = true
+    showFeaturedProjects = true
+    showLatestPosts = true
+    featuredProjectsLimit = 3
+    latestPostsLimit = 3
+    projectsTitle = "Selected Work"
+    projectsSubtitle = ""
+    blogTitle = "Latest Writing"
+    blogSubtitle = ""
+    techMarqueeLabel = "Experienced In"
+
+    [[params.home.tech]]
+      label = "Python"
+      icon = "devicon-python-plain"
+
+    [[params.home.tech]]
+      label = "Git"
+      icon = "devicon-git-plain"
+
+    [[params.home.tech]]
+      label = "Hugo"
+      icon = "devicon-hugo-plain"
+
+  [params.about.alt]
+    [[params.about.alt.stats]]
+      value = "1+"
+      label = "Years Coding"
+
+    [[params.about.alt.stats]]
+      value = "1+"
+      label = "Projects"
+
+    [[params.about.alt.stats]]
+      value = "∞"
+      label = "Hours Spent"
+
+    [[params.about.alt.skills]]
+      label = "Python"
+      icon = "devicon-python-plain"
+
+  [params.hero]
+    badge = "개발자"
+    title = "안녕하세요, chictimin입니다."
+    role = "실습 삼아 만든 devlog"
+    summary = "Hugo와 GitHub Pages로 만든 개인 블로그입니다."
+    location = "Korea"
+    focus = "Hugo와 GitHub Actions로 블로그 배포 실습 중."
+    available = true
+    availableLabel = "Available for work"
+
+    nowLabel = "Quick Facts"
+    nowIntro = "Right now I'm mainly:"
+    now = [
+      "Hugo로 블로그 만들어보는 중",
+      "GitHub Actions 배포 파이프라인 실습 중"
+    ]
+
+    [params.hero.primary]
+      label = "View Projects"
+      href = "/projects/"
+
+    [params.hero.secondary]
+      label = "Read the Blog"
+      href = "/blog/"
+
+  [params.icons]
+    useFontAwesome = true
+    useDevicon = true
+
+  [[params.social]]
+    label = "GitHub"
+    url = "https://github.com/chictimin"
+    icon = "fa-brands fa-github"
+
+  [[params.social]]
+    label = "Email"
+    url = "mailto:chictimin@gmail.com"
+    icon = "fa-regular fa-envelope"
+
+# Navigation Menu
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pageRef = "/"
+    url = "/"
+    weight = 1
+    identifier = "home"
+    [menu.main.params]
+      icon = "fa-solid fa-house"
+
+  [[menu.main]]
+    name = "About"
+    pageRef = "about"
+    url = "/about/"
+    weight = 2
+    identifier = "about"
+    [menu.main.params]
+      icon = "fa-regular fa-user"
+
+  [[menu.main]]
+    name = "Projects"
+    pageRef = "projects"
+    url = "/projects/"
+    weight = 3
+    identifier = "projects"
+    [menu.main.params]
+      icon = "fa-regular fa-folder-open"
+
+  [[menu.main]]
+    name = "Blog"
+    pageRef = "blog"
+    url = "/blog/"
+    weight = 4
+    identifier = "blog"
+    [menu.main.params]
+      icon = "fa-regular fa-note-sticky"
+
+# Markup Configuration
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+  [markup.goldmark.renderer]
+    unsafe = true
+
+  [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+
+  [markup.goldmark.extensions]
+    typographer = true
+    linkify = true
+    table = true
+    strikethrough = true
+    taskList = true
+    definitionList = true
+    footnote = true
+
+    [markup.goldmark.extensions.extras.delete]
+      enable = true
+    [markup.goldmark.extensions.extras.insert]
+      enable = true
+    [markup.goldmark.extensions.extras.mark]
+      enable = true
+
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    lineNumbersInTable = false
+    noClasses = false
+    style = "monokai"
+    tabWidth = 2
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Privacy Configuration
+[privacy]
+  [privacy.youtube]
+    privacyEnhanced = true
