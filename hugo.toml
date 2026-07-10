@@ -15,8 +15,8 @@ theme = "minimal-black"
   notAlternative = true
 
 [params]
-  brand = "devlog"
-  description = "개발 기록을 남기는 블로그"
+  brand = "chictimin"
+  description = "13년차 프론트엔드 개발자 박시민입니다. 소규모 마이크로사이트부터 대기업 글로벌 사이트까지 다양한 프로젝트를 거치며 React·Next.js·TypeScript를 중심으로 개발하고 있고, 웹 접근성과 시맨틱 마크업 기반의 좋은 사용성을 만드는 데 집중합니다."
 
   # Favicon - Place your favicon files in /static/ directory
   favicon = "icons/favicon.svg"
@@ -62,25 +62,52 @@ theme = "minimal-black"
 
   [params.about.alt]
     [[params.about.alt.stats]]
-      value = "1+"
+      value = "13+"
       label = "Years Coding"
 
     [[params.about.alt.stats]]
-      value = "1+"
+      value = "15+"
       label = "Projects"
 
     [[params.about.alt.stats]]
-      value = "∞"
-      label = "Hours Spent"
+      value = "8+"
+      label = "Projects Led"
 
     [[params.about.alt.skills]]
-      label = "Python"
-      icon = "devicon-python-plain"
+      label = "TypeScript"
+      icon = "devicon-typescript-plain"
+
+    [[params.about.alt.skills]]
+      label = "React"
+      icon = "devicon-react-original"
+
+    [[params.about.alt.skills]]
+      label = "Next.js"
+      icon = "devicon-nextjs-plain"
+
+    [[params.about.alt.skills]]
+      label = "TailwindCSS"
+      icon = "devicon-tailwindcss-plain"
+
+    [[params.about.alt.skills]]
+      label = "GraphQL"
+      icon = "devicon-graphql-plain"
+
+    [[params.about.alt.skills]]
+      label = "Tanstack Query"
+
+    [[params.about.alt.skills]]
+      label = "React-Hook-Form"
+
+    [[params.about.alt.skills]]
+      label = "Git"
+      icon = "devicon-git-plain"
 
   [params.hero]
     badge = "개발자"
     title = "안녕하세요, chictimin입니다."
     role = "실습 삼아 만든 devlog"
+    avatar = "images/avatar.png"
     summary = "Hugo와 GitHub Pages로 만든 개인 블로그입니다."
     location = "Korea"
     focus = "Hugo와 GitHub Actions로 블로그 배포 실습 중."
