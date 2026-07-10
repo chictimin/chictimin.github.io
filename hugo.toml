@@ -24,7 +24,6 @@ theme = "minimal-black"
 
   logo = "images/logo.png"
 
-  projectsIntro = "진행했던 프로젝트들입니다."
   blogIntro = ""
 
   [params.manifest]
@@ -36,29 +35,43 @@ theme = "minimal-black"
     defaultTheme = "dark"
 
   [params.home]
-    sections = ["hero", "now", "tech-marquee", "projects", "posts"]
+    sections = ["hero", "now", "tech-marquee", "posts"]
     showNowSection = true
-    showFeaturedProjects = true
     showLatestPosts = true
-    featuredProjectsLimit = 3
     latestPostsLimit = 3
-    projectsTitle = "Selected Work"
-    projectsSubtitle = ""
     blogTitle = "Latest Writing"
     blogSubtitle = ""
     techMarqueeLabel = "Experienced In"
 
     [[params.home.tech]]
-      label = "Python"
-      icon = "devicon-python-plain"
+      label = "TypeScript"
+      icon = "devicon-typescript-plain"
 
     [[params.home.tech]]
+      label = "React"
+      icon = "devicon-react-original"
+
+    [[params.home.tech]]
+      label = "Next.js"
+      icon = "devicon-nextjs-plain"
+
+    [[params.home.tech]]
+      label = "TailwindCSS"
+      icon = "devicon-tailwindcss-plain"
+
+    [[params.home.techReverse]]
+      label = "GraphQL"
+      icon = "devicon-graphql-plain"
+
+    [[params.home.techReverse]]
+      label = "Tanstack Query"
+
+    [[params.home.techReverse]]
+      label = "React-Hook-Form"
+
+    [[params.home.techReverse]]
       label = "Git"
       icon = "devicon-git-plain"
-
-    [[params.home.tech]]
-      label = "Hugo"
-      icon = "devicon-hugo-plain"
 
   [params.about.alt]
     [[params.about.alt.stats]]
@@ -122,12 +135,12 @@ theme = "minimal-black"
     ]
 
     [params.hero.primary]
-      label = "View Projects"
-      href = "/projects/"
-
-    [params.hero.secondary]
       label = "Read the Blog"
       href = "/blog/"
+
+    [params.hero.secondary]
+      label = "About Me"
+      href = "/about/"
 
   [params.icons]
     useFontAwesome = true
@@ -164,19 +177,10 @@ theme = "minimal-black"
       icon = "fa-regular fa-user"
 
   [[menu.main]]
-    name = "Projects"
-    pageRef = "projects"
-    url = "/projects/"
-    weight = 3
-    identifier = "projects"
-    [menu.main.params]
-      icon = "fa-regular fa-folder-open"
-
-  [[menu.main]]
     name = "Blog"
     pageRef = "blog"
     url = "/blog/"
-    weight = 4
+    weight = 3
     identifier = "blog"
     [menu.main.params]
       icon = "fa-regular fa-note-sticky"
