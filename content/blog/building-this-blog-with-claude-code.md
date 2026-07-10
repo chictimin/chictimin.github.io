@@ -1,7 +1,7 @@
 +++
 title = "Claude Code로 devlog 만들기: AI 에이전트에게 맡기고 검토한 기록"
 date = "2026-07-10T10:32:45+09:00"
-draft = true
+draft = false
 tags = ["hugo", "github-pages", "claude-code", "ai-agent"]
 categories = ["일지"]
 description = "AIFFEL AI 에이전트 부트캠프 온보딩 미션으로 Claude Code와 함께 이 블로그를 만든 과정 기록"
