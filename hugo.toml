@@ -27,7 +27,7 @@ theme = "minimal-black"
   blogIntro = ""
 
   [params.manifest]
-    themeColor = "#a855f7"
+    themeColor = "#14b8a6"
     backgroundColor = "#000000"
     categories = ["blog", "portfolio", "developer"]
 
@@ -118,20 +118,21 @@ theme = "minimal-black"
 
   [params.hero]
     badge = "개발자"
-    title = "안녕하세요, chictimin입니다."
-    role = "실습 삼아 만든 devlog"
-    avatar = "images/avatar.png"
-    summary = "Hugo와 GitHub Pages로 만든 개인 블로그입니다."
+    title = "개발자 자신감 회복 일지"
+    role = "일단 부딪혀보는 블로그"
+    avatar = "images/avatar2.png"
+    summary = "까짓거 프론트엔드 개발에서 AI 엔지니어링까지 해봅시다"
     location = "Korea"
-    focus = "Hugo와 GitHub Actions로 블로그 배포 실습 중."
+    focus = "Cloude로 이것저것 손발 맞춰보는 중"
     available = true
     availableLabel = "Available for work"
 
     nowLabel = "Quick Facts"
     nowIntro = "Right now I'm mainly:"
     now = [
-      "Hugo로 블로그 만들어보는 중",
-      "GitHub Actions 배포 파이프라인 실습 중"
+      "Hugo로 블로그 운영해보는 중",
+      "AI랑 같이 일해보려고 공부 중",
+      "게임 좋아"
     ]
 
     [params.hero.primary]
