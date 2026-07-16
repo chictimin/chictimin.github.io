@@ -34,6 +34,9 @@ theme = "minimal-black"
   [params.theme]
     defaultTheme = "dark"
 
+  [params.analytics]
+    googleAnalytics = "G-DGZGXFRWLX"
+
   [params.home]
     sections = ["hero", "now", "tech-marquee", "posts"]
     showNowSection = true
