@@ -1,6 +1,6 @@
 +++
 title = "매일 밤, AI가 내 작업 일지를 대신 쓴다 (2편): 캡처 스킬을 세 번 만든 이야기"
-date = "2026-07-19T21:00:00+09:00"
+date = "2026-07-19T16:00:00+09:00"
 draft = false
 tags = ["opencode", "obsidian", "skill", "zettelkasten", "para", "automation", "token-cost"]
 categories = ["일지"]
