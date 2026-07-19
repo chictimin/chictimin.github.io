@@ -27,8 +27,7 @@ description = "브라우저 동작 원리 4부작 완결편. 입력 이벤트와
 
 이벤트 데이터를 넘겨받은 렌더러 프로세스는 **적중 테스트**를 실행해서 이벤트 대상을 찾는다. 방금 페인트 단계에서 만들어진 화면 데이터를 활용해, 수신된 좌표에 어떤 요소가 있는지 알아내는 것이다. 대상을 찾으면 거기 연결된 이벤트 리스너를 실행(Trigger)한다.
 
-![Browser Process가 입력 좌표를 받아 Renderer Process의 Compositor로 넘기고, 적중 테스트를 거쳐 Main Thread가 "버튼 클릭"임을 알아내는 흐름](/images/browser-hit-test-webdev.png)
-_출처: Mariko Kosaka, "Inside look at modern web browser"(web.dev, 2018)_
+![적중 테스트 흐름](/images/browser-hit-test-webdev.png "Browser Process → Renderer Process Compositor → 적중 테스트 → Main Thread가 클릭을 인식하는 흐름 — 출처: Mariko Kosaka (web.dev, 2018)")
 
 ### Time to Interactive (TTI)
 

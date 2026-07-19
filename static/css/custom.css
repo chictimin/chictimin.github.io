@@ -15,3 +15,12 @@ html[data-theme="dark"] {
 .tech-strip-item .tech-icon {
   font-size: 1.15rem;
 }
+
+/* Show image captions (theme hides .md-image figcaption by default) */
+.markdown-body .md-image figcaption {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}

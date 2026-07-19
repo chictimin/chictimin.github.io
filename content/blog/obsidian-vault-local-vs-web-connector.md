@@ -19,7 +19,7 @@ description = "옵시디언 vault를 연결하려고 API, 파일시스템 MCP를
 
 옵시디언(Obsidian)[^1] vault를 AI 코딩 도구에 연결해서 쓴 지는 꽤 됐다. 그런데 기존에 쓰던 MCP 커넥터(`mcp-obsidian`)가 자꾸 오류를 뱉기 시작했다. 어디가 문제인지 원인을 파고드는 대신, 이번 기회에 아예 연결 방식을 다시 잡기로 했다.
 
-![클로드는 딱 이 짤처럼 행동하고 있었다](/images/obsidian-vault-10.gif)
+![클로드 행동 패턴](/images/obsidian-vault-10.gif "클로드는 딱 이 짤처럼 행동하고 있었다")
 
 목표는 단순했다. **에러 없이, 가볍게, 로컬 코딩 도구와 데스크톱 앱 양쪽에서 다 되게.** 그런데 이 "양쪽에서 다"가 하루 종일 발목을 잡았다.
 
@@ -45,7 +45,7 @@ API 키와 URL은 채팅에 그대로 남기지 않고 `~/.config/obsidian-api.e
 
 데스크톱 앱 설정 파일(`claude_desktop_config.json`)에 이 서버를 등록하고, vault 경로를 인자로 넘겼다. Claude Code 세션에서 테스트해보니 문제없이 붙었다 — 로그에도 에러 하나 없었다.
 
-![이 똑같은 말을 다른 질문을 해도 똑같이 뱉어냈다](/images/obsidian-vault-logs.jpg)
+![반복 응답 로그](/images/obsidian-vault-logs.jpg "이 똑같은 말을 다른 질문을 해도 똑같이 뱉어냈다")
 
 그런데 "다른 데서도 되나" 확인해보라니까 문제가 터졌다. 데스크톱 앱의 **일반 채팅**에서는 이 커넥터를 아예 못 쓰겠다는 거였다.
 
@@ -93,7 +93,7 @@ flowchart LR
 
 결과적으로 같은 vault를 두 가지 경로로 접근한다. 코드 쪽은 MCP 없이 가장 가볍게, 웹 채팅 쪽은 mcpvault 커넥터를 통해서.
 
-![이렇게 간단한 것을...](/images/obsidian-vault-10-1.gif)
+![최종 해결](/images/obsidian-vault-10-1.gif "이렇게 간단한 것을...")
 
 ---
 
