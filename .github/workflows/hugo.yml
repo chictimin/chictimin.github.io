@@ -3,6 +3,8 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches: ["main"]
+  schedule:
+    - cron: "0 1 * * *"  # 매일 10:00 KST (01:00 UTC) — 미래 예약 포스트 발행
   workflow_dispatch:
 
 permissions:
@@ -51,6 +53,7 @@ jobs:
           hugo \
             --gc \
             --minify \
+            --buildFuture \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
