@@ -24,3 +24,26 @@ html[data-theme="dark"] {
   color: var(--color-text-muted);
   font-style: italic;
 }
+
+/* Cap content images at 80% of the article width (max-width only, small images keep their size) */
+.markdown-body img {
+  max-width: 80%;
+}
+
+.markdown-body .md-image a {
+  max-width: 80%;
+}
+
+.markdown-body .md-image img {
+  max-width: 100%;
+}
+
+/* Center mermaid diagrams narrower than the article (theme left-aligns them) */
+.markdown-body .md-mermaid pre.mermaid {
+  text-align: center;
+}
+
+.markdown-body .md-mermaid svg {
+  display: block;
+  margin: 0 auto;
+}

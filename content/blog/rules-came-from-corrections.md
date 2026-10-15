@@ -19,7 +19,7 @@ description = "PRD로 판단 기준을 먼저 고정했다고 정리하면 그�
 
 [1편](/blog/agents-talked-through-github-issues/)에서는 계획한 것과 실제로 일어난 것이 어떻게 어긋났는지를 썼다. 에이전트들이 깃허브 이슈를 소통 창구로 쓰기 시작한 일, 화면 사이 이동 수단이 통째로 없었던 일, 크레딧이 코드보다 먼저 바닥난 일.
 
-<figure><img src="/images/dark-wizard-orchestrating.gif" alt="에이전트를 조종하는 흑마술사인 나" style="width: 100%; height: auto; border-radius: 8px;" /><figcaption>에이전트를 조종하는 흑마술사인 나</figcaption></figure>
+<figure><img src="/images/dark-wizard-orchestrating.gif" alt="에이전트를 조종하는 흑마술사인 나" /><figcaption>에이전트를 조종하는 흑마술사인 나</figcaption></figure>
 
 이번 글은 반대쪽이다. 그 사고들 사이에서 나는 코드를 거의 짜지 않았다. 에이전트를 배치하고, 결과를 보고, 틀린 걸 지적했다. 그리고 지적할 때마다 규칙이 하나씩 생겼다.
 
