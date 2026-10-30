@@ -44,6 +44,14 @@ html[data-theme="dark"] {
   margin-right: auto;
 }
 
+/* On mobile, let markdown images use the full column so diagram text stays readable */
+@media (max-width: 640px) {
+  .markdown-body img,
+  .markdown-body .md-image a {
+    max-width: 100%;
+  }
+}
+
 /* Center mermaid diagrams narrower than the article (theme left-aligns them) */
 .markdown-body .md-mermaid pre.mermaid {
   text-align: center;
