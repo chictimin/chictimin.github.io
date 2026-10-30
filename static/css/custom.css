@@ -38,6 +38,12 @@ html[data-theme="dark"] {
   max-width: 100%;
 }
 
+/* Keep content images centered on mobile (theme's responsive.css resets horizontal margins to 0) */
+.markdown-body img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Center mermaid diagrams narrower than the article (theme left-aligns them) */
 .markdown-body .md-mermaid pre.mermaid {
   text-align: center;
