@@ -44,7 +44,7 @@ description = "AI 리터러시 서비스 가늠을 9일 동안 만들었다. 가
 | GitHub Release | 10개 |
 | GitHub 이슈 | 71개 |
 
-같은 기간에 수업에서 배운 배포(GitHub Actions, staging, 무중단 배포)를 이 서비스에 그대로 붙였는데, 그 이야기는 2편에 따로 적는다. 이 글은 가늠을 만든 이야기다.
+같은 기간에 수업에서 배운 배포(GitHub Actions, staging, 무중단 배포)를 이 서비스에 그대로 붙였는데, 그 이야기는 [2편](/blog/class-deploy-to-real-service/)에 따로 적었다. 이 글은 가늠을 만든 이야기다.
 
 ---
 
@@ -182,5 +182,5 @@ AI는 기본적으로 눈앞의 상황을 해결하는 걸 우선하게 짜여 �
 
 ## 참고 자료
 
-- 2편: 수업에서 배운 배포를 실제 서비스에 붙이기 (발행 예정)
+- 2편: [수업에서 배운 배포를 실제 서비스에 붙이기](/blog/class-deploy-to-real-service/)
 - 이전 글: [작업은 에이전트가 했고, 협업은 사람이 했다](/blog/agents-did-the-work-people-still-collaborated/)
