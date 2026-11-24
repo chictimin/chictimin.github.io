@@ -1,7 +1,9 @@
 baseURL = 'https://chictimin.github.io/'
 locale = 'ko'
+defaultContentLanguage = 'ko'
 title = 'devlog'
 theme = "minimal-black"
+enableRobotsTXT = true
 
 # Enable search index generation and web app manifest
 [outputs]
@@ -16,6 +18,9 @@ theme = "minimal-black"
 
 [params]
   brand = "chictimin"
+  author = "박시민"
+  # Open Graph / Twitter 카드 기본 이미지 (글에 images가 없을 때)
+  images = ["images/avatar2.png"]
   description = "13년차 프론트엔드 개발자 박시민입니다. 소규모 마이크로사이트부터 대기업 글로벌 사이트까지 다양한 프로젝트를 거치며 React·Next.js·TypeScript를 중심으로 개발하고 있고, 웹 접근성과 시맨틱 마크업 기반의 좋은 사용성을 만드는 데 집중합니다."
 
   # Favicon - Place your favicon files in /static/ directory
