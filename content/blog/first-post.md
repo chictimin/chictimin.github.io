@@ -5,6 +5,9 @@ title = 'Hugo와 GitHub Pages로 블로그 시작하기'
 tags = ["hugo", "github-pages"]
 categories = ["일지"]
 description = "Hugo와 GitHub Actions로 devlog를 만든 첫 실습 기록"
+robots = "noindex"
+[sitemap]
+  disable = true
 +++
 
 Hugo와 GitHub Pages로 블로그를 만들어보는 실습 첫 글입니다.

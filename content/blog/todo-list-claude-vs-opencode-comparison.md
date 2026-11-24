@@ -7,8 +7,6 @@ categories = ["일지"]
 description = "동일한 요구사항 문서(PRD)를 Claude Code와 OpenCode에게 각각 주고 Tauri 2.0 to-do list 앱을 구현하게 한 뒤, 코드 품질을 5개 축에서 비교 분석한 기록"
 +++
 
-# 같은 PRD, 다른 결과: Claude Code와 OpenCode로 만든 Tauri to-do list 앱 코드 품질 비교
-
 > 동일한 PRD를 두 AI 코딩 도구(Claude Code, OpenCode)에게 각각 주고 Tauri 2.0 + React + SQLite to-do list 앱을 구현하게 했다. 그리고 나서 코드 품질을 5개 축에서 비교해봤다 -- 아키텍처, 타입 안전성, 기능 완성도, 디자인, 백엔드 품질.
 
 ![Claude Code 버전 (다크 테마, 네온 그린)](/images/todo-compare-claude.jpg)
